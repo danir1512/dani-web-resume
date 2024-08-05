@@ -11,13 +11,21 @@ function App() {
       <div className="card">
         <h1> About myself: </h1>
           <p> 
-            Hi, I am Dani Genovese, a Software Engineer currently working from Lisbon. I am now working for Bosch on the development of software 
-            for autonomous vehicles. I am amovitved person that is always looking for the next challenge bla bla bla...
+          Autonomous Driving Software Engineer at Bosch with a Master's degree in Computer Science and Electrical Engineering from FCT-NOVA. 
+          I am a hardworking and motivated software engineer offering strong foundations in software related topics, always looking for new 
+          challenges and opportunities to create something meaningful and add real value the business.
           </p>
       </div>
       <div>
-        <h1> Experience: </h1>
-        <p> </p>
+        <h1> Work Experience: </h1>
+        <h2> Software Engineer I </h2>
+        <ul>
+          <li> Bosch Portugal -- 2022 - Present -- Lisbon, Portugal </li>
+          <li> Working on Bosch autonomous driving solutions, having experience in lane and object detection and motion estimation. </li>
+          <li> Develop C++ for embedded software that runs on the vehicle, following the AUTOSAR and automotive standards. </li> 
+          <li> Extend KPI tools functionality in Python to better evaluate our current solution. </li> 
+          <li> Profile and optimize C++ to improve product performance. </li>
+        </ul>      
       </div>
       <div>
         <h1> Education: </h1>
@@ -26,27 +34,10 @@ function App() {
       <div>
         <h1> Projects: </h1>
         <p> Bla bla bla</p>
-      </div>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
+        <a href='https://github.com/danir1512'> 
+          <p> Git hub page</p>
         </a>
       </div>
-      <h1>Vite + Shit</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
