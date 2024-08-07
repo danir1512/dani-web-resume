@@ -40,3 +40,34 @@
 .read-the-docs {
   color: #888;
 }
+
+.section-card {
+  background-color: rgb(53, 141, 224);
+  padding: 2em;
+  border-radius: 15px; /* Add this line */
+  padding-left: 40px;
+  padding-right: 40px;
+} 
+
+.section-card:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.section-card.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.subsection-card {
+  background-color: rgb(203, 223, 228);
+  border-radius: 15px; /* Add this line */
+  padding: 0.5em;
+  color: black;
+}
+
+.subsection-card:hover {
+  filter: drop-shadow(0 0 2em #5a5fbdaa);
+}
+
+.subsection-card.react:hover {
+  filter: drop-shadow(0 0 2em #59a5b9aa);
+}
