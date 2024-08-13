@@ -1,194 +1,219 @@
+import React from 'react';
+import { Container, Row, Col, Card, ProgressBar, Badge, ListGroup } from 'react-bootstrap';
 import fotodani from './assets/foto.png'
-import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col, Card, Button, Nav, Image } from 'react-bootstrap';
 
-/* function App() {
-
+const CvTemplate = () => {
   return (
-    <>
-      <Card className='foto-card'>
-        <Card.Img variant="top" src={fotodani} style={{ width: '200px', height: '200px' }} />
-        <Card.Body>
-          <Card.Title>Dani Genovese</Card.Title>
-          <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-      <br />
+    <Container className="w3-light-grey">
+      {/* Main Container */}
+      <Container className="w3-content" >
+        {/* Grid */}
+        <Row className="w3-row-padding">
+          {/* Left Column */}
+          <Col className="w3-third">
+            <Card className="w3-white w3-text-grey w3-card-4">
+              <Card.Img variant="top" src={fotodani} alt="Avatar" style={{ width: '100%' }} className="w3-display-container"/>
+              <Card.Body className="w3-container">
+                <Card.Title as="h2" className="w3-container w3-text-black">Dani Genovese</Card.Title>
+                <Card.Text className="w3-container">
+                  <p><i className="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer</p>
+                  <p><i className="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Lisbon, Portugal</p>
+                  <p><i className="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>danir1512@gmail.com</p>
+                  <p><i className="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>+352 932282268</p>
+                </Card.Text>
+                <hr/>
+                <Container>
+                  <p className="w3-large"><b><i className="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                  <p>Adobe Photoshop</p>
+                  <div className="w3-light-grey w3-round-xlarge w3-small">
+                    <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{ width: '90%' }}>90%</div>
+                  </div>
+                  <p>Photography</p>
+                  <div className="w3-light-grey w3-round-xlarge w3-small">
+                    <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{ width: '80%' }}>80%</div>
+                  </div>
+                  <p>Illustrator</p>
+                  <div className="w3-light-grey w3-round-xlarge w3-small">
+                    <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{ width: '75%' }}>75%</div>
+                  </div>
+                  <p>Media</p>
+                  <div className="w3-light-grey w3-round-xlarge w3-small">
+                    <div className="w3-container w3-center w3-round-xlarge w3-teal" style={{ width: '50%' }}>50%</div>
+                  </div>
+                 
+                </Container>
+                <hr/>
+                <Container>
+                  <p className="w3-large w3-text-theme"><b><i className="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                  <p>English</p>
+                  <div className="w3-light-grey w3-round-xlarge">
+                    <div className="w3-round-xlarge w3-teal" style={{ height: '24px', width: '100%' }}></div>
+                  </div>
+                  <p>Spanish</p>
+                  <div className="w3-light-grey w3-round-xlarge">
+                    <div className="w3-round-xlarge w3-teal" style={{ height: '24px', width: '55%' }}></div>
+                  </div>
+                  <p>German</p>
+                  <div className="w3-light-grey w3-round-xlarge">
+                    <div className="w3-round-xlarge w3-teal" style={{ height: '24px', width: '25%' }}></div>
+                  </div>
+                  <br />
+                </Container>
+              </Card.Body>
+            </Card>
+          </Col>
 
-      <Card className='section-card'>
-        <Card.Body>
-          <Card.Title>About myself:</Card.Title>
-          <Card.Text>
-            Autonomous Driving Software Engineer at Bosch with a Master's degree in Computer Science and Electrical Engineering from FCT-NOVA. 
-            I am a hardworking and motivated software engineer offering strong foundations in software related topics, always looking for new 
-            challenges and opportunities to create something meaningful and add real value the business.
-          </Card.Text>
-        </Card.Body>
-      </Card>
-      <br />
+          {/* Right Column */}
+          <Container className="w3-twothird">
 
-      <Card className='section-card'>
-        <Card.Header>Work Experience:</Card.Header>
-        <br/>
-        <Card.Body>
-          <Card className='subsection-card'>
-            <Card.Header>Software Engineer I</Card.Header>
-            <Card.Body>
-            <Card.Subtitle className="mb-2 text-muted">Bosch Portugal -- 2022 - Present -- Lisbon, Portugal</Card.Subtitle>
-              <ul>
-                <li>Working on Bosch autonomous driving solutions, having experience in lane and object detection and motion estimation.</li>
-                <li>Develop C++ for embedded software that runs on the vehicle, following the AUTOSAR and automotive standards.</li>
-                <li>Extend KPI tools functionality in Python to better evaluate our current solution.</li>
-                <li>Profile and optimize C++ to improve product performance.</li>
-              </ul>
-            </Card.Body>
-          </Card>
-          <br />
+            {/* About Myself Card */}
+            <Card className="w3-container w3-card-2 w3-white w3-margin-bottom">
+              <Card.Title as="h1" className="w3-text-grey w3-padding-16 ">
+                <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> About Myself
+              </Card.Title>
 
-          <Card className='subsection-card'>
-            <Card.Header>Software Developer Intern</Card.Header>
-            <Card.Title></Card.Title>
-            <Card.Body>
-            <Card.Subtitle>
-              Bosch Portugal <br/>
-              2022 - Present <br/>
-              Lisbon, Portugal</Card.Subtitle>
-              <ul>
-                <li>Develop web application for internal client in the company using Vanilla JavaScript, JQuery, PHP and CSS.</li>
-                <li>Engage is meetings discussion with the customer to understand what features the app needed.</li>
-                <li>By the end of my internship, I successfully delivered the application.</li>
-              </ul>
-            </Card.Body>
-          </Card>
-          <br />
-        </Card.Body>
-      </Card>
-      <br />
-      
-      <Card className='section-card'>
-        <Card.Body>
-          <Card.Title>Education:</Card.Title>
-          <Card.Text>
-          <Card className='subsection-card'>
-            <Card.Header>NOVA - Nova School of Science and Technology</Card.Header>
-            <Card.Title></Card.Title>
-            <Card.Body>
-            <Card.Subtitle className="mb-2 text-muted">Bosch Portugal -- 2022 - Present -- Lisbon, Portugal</Card.Subtitle>
-              <ul>
-                <li>Specialization in Electronics and Robotics.</li>
-              </ul>
-            </Card.Body>
-          </Card>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-      <br />
+              <Card.Body className="w3-container">
+                <Card.Text>
+                  Autonomous Driving Software Engineer at Bosch with a Master's degree in Computer Science and Electrical Engineering from FCT-NOVA. 
+                  I am a hardworking and motivated software engineer offering strong foundations in software related topics, always looking for new 
+                  challenges and opportunities to create something meaningful and add real value the business.
+                </Card.Text>
+              </Card.Body>
+              <hr />
+              
+            </Card>
 
-      <Card className='section-card'>
-        <Card.Body>
-          <Card.Title>Projects:</Card.Title>
-          <Card.Text>
-            Bla bla bla
-            <a href='https://github.com/danir1512'> 
-          <p> Git hub page</p>
-        </a>
-          </Card.Text>
-        </Card.Body>
-      </Card>
-      <br />
+            {/* Education */}
+            <Card className="w3-container w3-card-2 w3-white w3-margin-bottom">
+              <Card.Title as="h1" className="w3-text-grey w3-padding-16 ">
+                <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Education
+              </Card.Title>
 
-    </>
-  )
-} */
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>NOVA - Nova School of Science and Technology </b>
+                </Card.Title>
+                <Card.Subtitle as="h6" className="w3-text-teal">
+                  <i className="fa fa-calendar fa-fw w3-margin-right"></i>2017 - 2023
+                </Card.Subtitle>
 
-const App = () => {
-  return (
-    <Container fluid>
-      <Row>
-        {/* Sidebar */}
-        <Col md={3} className="bg-light">
-          <Card className="text-center p-3">
-            <Image src={fotodani} roundedCircle className="mb-3" />
-            <h3>Dani Genovese</h3>
-            <h5>Software Engineer</h5>
-            <hr />
-            <div className="text-left">
-              <p><strong>Name:</strong> Johnson</p>
-              <p><strong>Birthday:</strong> 08 Novemver 1998</p>
-              <p><strong>Job:</strong> Software Engineer</p>
-              <p><strong>Email:</strong> danir1512@gmail.com</p>
-              <p><strong>Skype:</strong> test@gmail.com</p>
-            </div>
-            <Button variant="primary" className="mt-3">Download CV</Button>
-          </Card>
-        </Col>
+                <Card.Text>
+                  <ul>
+                    <li>Master's degree in Computer Science and Electrical Engineering</li>
+                    <li>Thesis: "Deep Learning for Autonomous Driving"</li>
+                    <li>Thesis Grade: 19/20</li>
+                  </ul>
+                </Card.Text>
+              </Card.Body>
+              <hr />
+        
+            </Card>
 
-        {/* Main Content */}
-        <Col md={9}>
-          <Nav className="justify-content-center mt-3">
-            <Nav.Item>
-              <Nav.Link href="#resume">Resume</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#contact">Contact</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Button variant="primary" className="ml-3">Hire Me</Button>
-            </Nav.Item>
-          </Nav>
+            {/* Work Experience */}
+            <Card className="w3-container w3-card-2 w3-white w3-margin-bottom">
+              <Card.Title as="h1" className="w3-text-grey w3-padding-16 ">
+                <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Work Experience
+              </Card.Title>
 
-          <Card className="mt-3 p-4">
-            <h2>Resume</h2>
-            <Row>
-              <Col md={6}>
-                <h4>Working History</h4>
-                <ul>
-                  <li>
-                    <strong>Software Engineer - Bosch SA (2022 - Present)</strong>
-                    <ul>
-                      <li>Working on Bosch autonomous driving solutions, having experience in lane and object detection and motion estimation.</li>
-                      <li>Develop C++ for embedded software that runs on the vehicle, following the AUTOSAR and automotive standards.</li>
-                      <li>Extend KPI tools functionality in Python to better evaluate our current solution.</li>
-                      <li>Profile and optimize C++ to improve product performance.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </Col>
-            </Row>
-          </Card>
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>Software Engineer I - Bosch </b>
+                </Card.Title>
+                <Card.Subtitle as="h6" className="w3-text-teal">
+                  <i className="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2022 - <span className="w3-tag w3-teal w3-round">Current</span>
+                </Card.Subtitle>
 
-          <Card className="mt-3 p-4">
-              <Col md={6}>
-                <h4>Education History</h4>
-                <ul>
-                  <li>
-                    <strong>NOVA School of Science and Tecnology (2022 - 2009)</strong>
-                    <p>Expenses as material breeding insisted building to in...</p>
-                  </li>
-                  <li>
-                    <strong>Drawing Course (2003 - 2004)</strong>
-                    <p>So insisted received is occasion advanced honoured...</p>
-                  </li>
-                  <li>
-                    <strong>Abc High School (2000 - 2003)</strong>
-                    <p>Excited him now natural saw passage offices you minuter...</p>
-                  </li>
-                </ul>
-              </Col>
-          </Card>
+                <Card.Text>
+                  <ul>
+                    <li>Working on Bosch autonomous driving solutions, having experience in lane and object detection and motion estimation.</li>
+                    <li>Develop C++ for embedded software that runs on the vehicle, following the AUTOSAR and automotive standards.</li>
+                    <li>Extend KPI tools functionality in Python to better evaluate our current solution.</li>
+                    <li>Profile and optimize C++ to improve product performance.</li>
+                  </ul>
+                </Card.Text>
+              </Card.Body>
+              <hr />
 
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>Software Developer Intern - Altice </b>
+                </Card.Title>
+                <Card.Subtitle as="h6" className="w3-text-teal">
+                  <i className="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 - Aug 2020 <i/>
+                </Card.Subtitle>
 
-        </Col>
-      </Row>
+                <Card.Text>
+                  <ul>
+                    <li>Working on Bosch autonomous driving solutions, having experience in lane and object detection and motion estimation.</li>
+                    <li>Develop C++ for embedded software that runs on the vehicle, following the AUTOSAR and automotive standards.</li>
+                    <li>Extend KPI tools functionality in Python to better evaluate our current solution.</li>
+                    <li>Profile and optimize C++ to improve product performance.</li>
+                  </ul>
+                </Card.Text>
+              </Card.Body>
+              <hr />
+              
+            </Card>
+
+            {/* Personal Projects */}
+            <Card className="w3-container w3-card-2 w3-white w3-margin-bottom">
+              <Card.Title as="h1" className="w3-text-grey w3-padding-16 ">
+                <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Personal Projects
+              </Card.Title>
+
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>Small web application using React</b>
+                </Card.Title>
+                <Card.Link as="a" href="https://www.example.com" className="w3-text-teal">
+                  <h5>https://github.com/danir1512</h5>
+                </Card.Link>
+                <Card.Text>
+                  <ul>
+                    <li>I set a goal of creating a small multi-page we application 
+                      that stored and display information for a certain game.</li>
+                    <li>This involved creating a backend and frontend for the app to 
+                      display and retrieve the information from a SQL database.</li>
+                  </ul>
+                </Card.Text>
+
+                {/* <Card.Img src={fotodani} alt="Avatar" style={{ width: '50%' }} className="w3-display-container">
+
+                </Card.Img> */}
+              </Card.Body>
+              <hr />
+
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>Jewels Game</b>
+                </Card.Title>
+                <Card.Link as="a" href="https://www.example.com" className="w3-text-teal">
+                  <h5>https://github.com/danir1512</h5>
+                </Card.Link>
+
+                <Card.Text>
+                  <ul>
+                    <li>Small game that I develop using C++ and the SDL library.</li>
+                  </ul>
+                </Card.Text>
+
+                {/* <Card.Img src={fotodani} alt="Avatar" style={{ width: '50%' }} className="w3-display-container">
+
+                </Card.Img> */}
+              </Card.Body>
+              <hr />
+        
+            </Card>
+          </Container>
+        </Row>
+      </Container>
     </Container>
+    
   );
-}
+};
+
+export default CvTemplate;
+
+
   
-export default App
+// export default App
