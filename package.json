@@ -1,6 +1,6 @@
 {
-  "name": "dani-resume-website",
-  "homepage" : "http://danir1512.github.io/WebApp/dani-resume-website",
+  "name": "WebApp",
+  "homepage" : "http://danir1512.github.io/WebApp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
