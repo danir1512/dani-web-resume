@@ -1,6 +1,6 @@
 {
   "name": "dani-resume-website",
-  "homepage" : "http://danir1512.github.io/WebApp",
+  "homepage" : "http://danir1512.github.io/WebApp/dani-resume-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
