@@ -80,11 +80,18 @@ const CvTemplate = () => {
                   <ul>
                     <li>Master's degree in Computer Science and Electrical Engineering</li>
                     <li>Thesis: "Deep Learning for Autonomous Driving"</li>
-                    <li>Thesis Grade: 19/20</li>
+                    <li>Thesis Grade: 17/20</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
-              <hr />
+
+              <Card.Body className="w3-container">
+                <Card.Text>
+                  For my Master Thesis, I develop a detection and tracking system for an USV (unmanned surface vehicle) using deep learning model YOLO. 
+                  The system was deployed to a NVIDIA Jetson Xavier, where it will be later connected to the whole robotics system. 
+                  I developed the system using C++, ROS and Python, while using the NVIDIA Deepstream framework. 
+                </Card.Text>
+              </Card.Body>
         
             </Card>
 
@@ -104,10 +111,11 @@ const CvTemplate = () => {
 
                 <Card.Text>
                   <ul>
-                    <li>Working on Bosch autonomous driving solutions, having experience in lane and object detection and motion estimation.</li>
-                    <li>Develop C++ for embedded software that runs on the vehicle, following the AUTOSAR and automotive standards.</li>
-                    <li>Extend KPI tools functionality in Python to better evaluate our current solution.</li>
-                    <li>Profile and optimize C++ to improve product performance.</li>
+                    <li>Currently working on the development of Bosch's autonomous driving solutions, with a focus on lane detection.</li>
+                    <li>Designed and implemented C++ embedded software adhering to AUTOSAR standards.</li>
+                    <li>Developed and optimized Python-based KPI tools, boosting solution evaluation eﬃciency.</li>
+                    <li>Conducted proﬁling and performance optimizations for C++ applications.</li>
+                    <li>Work with template metaprogramming to optimize system performance and improve compile-time computations.</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -123,10 +131,9 @@ const CvTemplate = () => {
 
                 <Card.Text>
                   <ul>
-                    <li>Working on Bosch autonomous driving solutions, having experience in lane and object detection and motion estimation.</li>
-                    <li>Develop C++ for embedded software that runs on the vehicle, following the AUTOSAR and automotive standards.</li>
-                    <li>Extend KPI tools functionality in Python to better evaluate our current solution.</li>
-                    <li>Profile and optimize C++ to improve product performance.</li>
+                    <li>Developed and delivered an internal web application using Vanilla JavaScript, JQuery, PHP, and CSS.</li>
+                    <li>Engaged in regular meetings with customers, gathering requirements and incorporating feedback into the app.</li>
+                    <li>Completed the project ahead of the internship timeline, successfully delivering a fully functional application to the client.</li>
                   </ul>
                 </Card.Text>
               </Card.Body>
@@ -140,6 +147,7 @@ const CvTemplate = () => {
                 <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Personal Projects
               </Card.Title>
 
+              {/* TODO: Add the new projects to github and link them here. */}
               <Card.Body className="w3-container">
                 <Card.Title as="h5" className="w3-opacity">
                   <b>Small web application using React</b>
@@ -179,6 +187,44 @@ const CvTemplate = () => {
                 {/* <Card.Img src={fotodani} alt="Avatar" style={{ width: '50%' }} className="w3-display-container">
 
                 </Card.Img> */}
+              </Card.Body>
+              <hr />
+        
+            </Card>
+            
+            {/* Hobbies */}
+            <Card className="w3-container w3-card-2 w3-white w3-margin-bottom">
+              <Card.Title as="h1" className="w3-text-grey w3-padding-16 ">
+                <i className="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> Hobbies
+              </Card.Title>
+
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>Video games</b>
+                </Card.Title>
+                <Card.Text>
+                  <p>I am  a big fan of video games. I tend to like more single players games with a good story and indie games, but honestly I play almost everything!</p>
+                </Card.Text>
+              </Card.Body>
+              <hr />
+
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>Magic: The gathering</b>
+                </Card.Title>
+                <Card.Text>
+                  <p>I love playing Magic: The Gathering. I have been playing for a few years now and I love the strategy and the social aspect of the game.</p>
+                </Card.Text>
+              </Card.Body>
+              <hr />
+
+              <Card.Body className="w3-container">
+                <Card.Title as="h5" className="w3-opacity">
+                  <b>Sports</b>
+                </Card.Title>
+                <Card.Text>
+                  <p>I practice a lot of different sports. Currently, I am more focused on Muay-Thai and running. But I also do rock-climbing sometimes. I also practiced football and fencing in the past. </p>
+                </Card.Text>
               </Card.Body>
               <hr />
         
