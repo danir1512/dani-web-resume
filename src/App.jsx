@@ -175,12 +175,16 @@ const CvTemplate = () => {
                   <b>Jewels Game</b>
                 </Card.Title>
                 <Card.Link as="a" href="https://www.example.com" className="w3-text-teal">
-                  <h5>https://github.com/danir1512</h5>
+                  <h5>https://github.com/danir1512/Jewels-Game</h5>
                 </Card.Link>
 
                 <Card.Text>
                   <ul>
-                    <li>Small game that I develop using C++ and the SDL library.</li>
+                    <li>Small game that I develop using C++ and the SDL library. 
+                      The games consist of the famous Jewels game, in which the player needs 
+                      to match 3 jewels of the same type to get the most amount of points in a 
+                      set time. 
+                    </li>
                   </ul>
                 </Card.Text>
 
